@@ -45,8 +45,8 @@ export const Login = () => {
   return (
     <Box sx={style}>
       <form onSubmit={handleSubmit(handleButton)}>
-        <TextField placeholder="" {...register("email")} />
-        <TextField type="password" placeholder="" {...register("password")} />
+        <TextField placeholder="email" {...register("email")} />
+        <TextField type="password" placeholder="senha" {...register("password")} />
         <Button variant="outlined" color="secondary" type="submit">
           Entrar
         </Button>
